@@ -1,5 +1,5 @@
-## Writeup
-by Simón Mijares
+## Writeup Template
+### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -91,9 +91,9 @@ To Begin I started to search at three resolutions starting at the training resol
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
-Ultimately I searched on 4 scales using RGB 3-channel HOG features plus 3-histograms of HSV Channels in the feature vector, which provided a nice result.  Here are some example images:
+Ultimately I searched on the trainning scale using YCrCb 3-channel HOG features, plus 3-Laplacian edge detection, plus 3-histograms of YCrCb Channels in the feature vector, which provided a nice result.  Here are some example images:
 
-![alt text][image9]
+![alt text][image8]
 
 ---
 
@@ -118,7 +118,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 ![alt text][image7]
 
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
-![alt text][image8]
+![alt text][image9]
 
 Ths is in reference to a single frame, but the heatmap as a global variable was averaged with the following frame and then thresholded in the cumulative variable. This in order to take in consideration more than one frame at a time.
 
